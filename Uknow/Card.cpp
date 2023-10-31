@@ -1,12 +1,11 @@
 #include "Card.h"
 
-Card::Card(std::string cardRank, std::string cardSuit)
+Card::Card(int number)
 {
-    rank = cardRank;
-    suit = cardSuit;
+    this->number = number;
 }
 
-void Card::displayCard()
+void Card::displayCard() const
 {
-    std::cout << rank << " of " << suit << std::endl;
+    std::cout << "#" << number << std::endl;
 }

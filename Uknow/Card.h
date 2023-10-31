@@ -7,13 +7,12 @@
 
 class Card
 {
-private:
-    std::string rank;
-    std::string suit;
+    private:
+        int number;
 
-public:
-    Card(std::string cardRank, std::string cardSuit);
-    void displayCard();
+    public:
+        explicit Card(int number);
+        void displayCard() const;
 };
 
 #endif
